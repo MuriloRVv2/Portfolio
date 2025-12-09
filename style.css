@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata';
+}
+
+body {
+    font-size: 62.5%;
+}
+
+/*Cabeçalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    position: relative; 
+    margin: 0;
+}
+
+header::after {
+    top: 1rem;
+}
+
+header img {
+    width: 10rem;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Principal*/
+main {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+.titulo {
+    text-align: center;
+    padding: 0 0 5rem 0;
+}
+
+.Grade {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projetosGrade {
+    background: rgb(46, 60, 77);
+    border-radius: 1rem;
+}
+
+.projetosGrade img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+figcaption {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+}
