@@ -286,3 +286,110 @@ footer {
     color: var(--cor-texto-secundario);
     background: var(--cor-vidro);
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 50%; /* Reduz o tamanho base da fonte para telas menores */
+    }
+
+    header {
+        flex-direction: column; /* Empilha elementos verticalmente */
+        font-size: 1.2rem; /* Reduz tamanho da fonte */
+        padding: 1rem; /* Adiciona padding para espaçamento */
+    }
+
+    header img {
+        width: 8rem; /* Reduz largura da imagem */
+    }
+
+    header ul {
+        flex-direction: column; /* Empilha itens do menu verticalmente */
+        gap: 1rem; /* Ajusta gap */
+        text-align: center; /* Centraliza texto */
+    }
+
+    .botaoTema {
+        position: static; /* Remove posição absoluta para melhor fluxo */
+        margin-top: 1rem; /* Adiciona margem superior */
+    }
+
+    main {
+        margin: 1rem; /* Reduz margem */
+        padding: 0.5rem; /* Reduz padding */
+    }
+
+    h1 {
+        font-size: 3rem; /* Reduz tamanho do título */
+        margin: 1rem; /* Reduz margem */
+        text-align: center; /* Centraliza para mobile */
+    }
+
+    .Grade {
+        flex-direction: column; /* Empilha projetos verticalmente */
+        gap: 2rem; /* Reduz gap */
+        margin: 2rem 0; /* Ajusta margem */
+    }
+
+    .projetosGrade {
+        width: 100%; /* Largura total para mobile */
+        height: auto; /* Altura automática */
+        max-width: 40rem; /* Limita largura máxima */
+    }
+
+    .projetosGrade img {
+        width: 100%; /* Largura total da imagem */
+        height: auto; /* Altura automática */
+    }
+
+    figcaption {
+        font-size: 1.6rem; /* Reduz tamanho da fonte */
+        padding: 0.5rem; /* Reduz padding */
+    }
+
+    .sobreInfo {
+        flex-direction: column; /* Empilha elementos verticalmente */
+        gap: 2rem; /* Reduz gap */
+        padding: 1rem; /* Reduz padding */
+        margin: 1rem; /* Reduz margem */
+    }
+
+    .sobreInfo img {
+        width: 100%; /* Largura total */
+        max-width: 25rem; /* Limita largura máxima */
+    }
+
+    .sobreInfo2 {
+        margin: 1rem; /* Reduz margem */
+        padding: 1rem; /* Reduz padding */
+        font-size: 1.6rem; /* Reduz tamanho da fonte */
+    }
+
+    .sobreInfo2 h2 {
+        font-size: 2rem; /* Reduz tamanho do subtítulo */
+    }
+
+    form {
+        margin: 1rem; /* Reduz margem */
+        padding: 1rem; /* Reduz padding */
+    }
+
+    form input, form textarea {
+        font-size: 1.4rem; /* Reduz tamanho da fonte */
+        padding: 0.8rem; /* Reduz padding */
+    }
+
+    form button {
+        font-size: 1.4rem; /* Reduz tamanho da fonte */
+        padding: 0.8rem; /* Reduz padding */
+    }
+
+    form label {
+        font-size: 1.4rem; /* Reduz tamanho da fonte */
+    }
+
+    footer {
+        font-size: 1.2rem; /* Reduz tamanho da fonte */
+        padding: 0.5rem; /* Reduz padding */
+    }
+}
