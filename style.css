@@ -130,6 +130,7 @@ h1 {
     color: var(--cor-titulo);
     text-align: left;
     margin: 2rem;
+    text-shadow: var(--cor-card-texto) 2px 2px 2px;
 }
 
 .titulo {
