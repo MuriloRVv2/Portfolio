@@ -6,6 +6,7 @@
     <title>Portfolio Murilo Rodrigues</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imgs/LogoMurilo2.0.png" type="img">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -17,9 +18,11 @@
             <li><a href="#" class="inicio">Início</a></li>
             <li><a href="#projetos" class="projetos">Projetos</a></li>
             <li><a href="#sobre" class="sobre">Sobre Mim</a></li>
-            <li><a href="#contato" class="contato" id="contato">Contato</a></li>
+            <li><a href="#contato" class="contato">Contato</a></li>
         </ul>
-        <button><img src="imgs/dia-e-noite.png" alt=""></button>
+        <button class="botaoTema" onclick="trocarTema()">
+            <img src="imgs/dia-e-noite.png" alt="Tema">
+        </button>
     </header>
 
     <main>
@@ -32,10 +35,36 @@
                 </a>
             </section>
         </article>
+
+        <h1 id="sobre">Sobre Mim</h1>
+        <article class="sobreInfo">
+            <p>
+                Me chamo <strong>Murilo Rodrigues</strong>, estudo Análise e Desenvolvimento de Sistemas na ETEC Professor Camargo Aranha. Tenho 17 anos e tenho me especializado em desenvolvimento Java e como back-end. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para criar soluções eficientes e inovadoras. Procuro oportunidades para aplicar meus conhecimentos em projetos desafiadores e contribuir para o sucesso de equipes de desenvolvimento.
+            </p>
+            <img src="imgs/Foto de perfil.png" alt="Foto">
+        </article>
+        <article class="sobreInfo2">
+            <h2>Experiência</h2>
+            <ul>
+                <li>Templo do Hamburguer (Fora da área de tecnologia) - <p>Atuei fora da área de programação, como chapeiro e garçom.</p></li>
+                <li>TCC de Desenvolvedor Backend(SENAI) - <p>Projeto de Agenda de Contatos, com CRUD completo.</p></li>
+            </ul>
+        </article>
+
+        <h1 id="contato">Contato</h1>
+        <form action="https://formsubmit.co/muriloveroneze0987@gmail.com" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
     </main>
-
     <footer>
-
+        <p>© 2025 Murilo Rodrigues.</p>
     </footer>
 
 </body>
