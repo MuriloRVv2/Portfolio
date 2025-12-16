@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Murilo Rodrigues</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="imgs/LogoMurilo2.0.png" type="img">
     <script defer src="script.js"></script>
 </head>
@@ -12,45 +12,37 @@
 
     <header>
         <figure class="Logo">
-            <img src="imgs/LogoMurilo2.0.png" alt="Logotipo" id="inicio">
+            <img src="imgs/LogoMurilo2.0.webp" alt="Logotipo" id="inicio">
         </figure>
         <ul>
             <li><a href="#projetos" class="projetos">Projetos</a></li>
-            <li><a href="#sobre" class="sobre">Sobre Mim</a></li>
+            <li><a href="#sobre" class="sobre">Sobre</a></li>
             <li><a href="#contato" class="contato">Contato</a></li>
         </ul>
-        <button class="botaoTema" onclick="trocarTema()">
-            <img src="imgs/dia-e-noite.png" alt="Tema">
-        </button>
     </header>
 
     <main>
+        <button class="botaoTema" onclick="trocarTema()">
+            <img src="imgs/dia-e-noite.webp" alt="Tema">
+        </button>
+        <section class="intro">
+            <h1>Murilo Rodrigues - <br>Estudante de Desenvolvimento de Sistemas</h1>
+            <figure><img src="imgs/Foto de perfil.webp" alt="perfil"></figure>
+        </section>
+
+        <h1 class="titulo" id="sobre">Sobre Mim</h1>
+
         <h1 id="projetos" class="titulo">Projetos</h1>
         <article class="Grade">
             <section class="projetosGrade">
                 <a href="https://github.com/MuriloRVv2/AgendaContatos" target="_blank">
-                    <img src="imgs/Agenda.png" alt="Agenda">
+                    <img src="imgs/Agenda.webp" alt="Agenda">
                     <figcaption>Agenda de Contatos</figcaption>
                 </a>
             </section>
         </article>
 
-        <h1 id="sobre">Sobre Mim</h1>
-        <article class="sobreInfo">
-            <p>
-                Me chamo <strong>Murilo Rodrigues</strong>, estudo Análise e Desenvolvimento de Sistemas na ETEC Professor Camargo Aranha. Tenho 17 anos e tenho me especializado em desenvolvimento Java e como back-end. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para criar soluções eficientes e inovadoras. Procuro oportunidades para aplicar meus conhecimentos em projetos desafiadores e contribuir para o sucesso de equipes de desenvolvimento.
-            </p>
-            <img src="imgs/Foto de perfil.png" alt="Foto">
-        </article>
-        <article class="sobreInfo2">
-            <h2>Experiência</h2>
-            <ul>
-                <li>Templo do Hamburguer (Fora da área de tecnologia) - <p>Atuei fora da área de programação, como chapeiro e garçom.</p></li>
-                <li>TCC de Desenvolvedor Backend(SENAI) - <p>Projeto de Agenda de Contatos, com CRUD completo.</p></li>
-            </ul>
-        </article>
-
-        <h1 id="contato">Contato</h1>
+        <h1 id="contato" class="titulo">Contato</h1>
         <form action="https://formsubmit.co/muriloveroneze0987@gmail.com" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
