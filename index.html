@@ -12,11 +12,11 @@
 
     <header>
         <figure class="Logo">
-            <img src="imgs/LogoMurilo2.0.webp" alt="Logotipo" id="inicio">
+            <a href="#"><img src="imgs/LogoMurilo2.0.webp" alt="Logotipo" id="inicio"></a>
         </figure>
         <ul>
-            <li><a href="#projetos" class="projetos">Projetos</a></li>
             <li><a href="#sobre" class="sobre">Sobre</a></li>
+            <li><a href="#projetos" class="projetos">Projetos</a></li>
             <li><a href="#contato" class="contato">Contato</a></li>
         </ul>
     </header>
@@ -26,14 +26,17 @@
             <img src="imgs/dia-e-noite.webp" alt="Tema">
         </button>
         <section class="intro">
-            <h1>Murilo Rodrigues - <br>Estudante de Desenvolvimento de Sistemas</h1>
+            <h1><span>Murilo Rodrigues</span> - <br>Estudante de Desenvolvimento de Sistemas</h1>
             <figure><img src="imgs/Foto de perfil.webp" alt="perfil"></figure>
         </section>
 
         <h1 class="titulo" id="sobre">Sobre Mim</h1>
+        <article class="informacao">
+            <p>Meu nome é Murilo Rodrigues, tenho 17 anos e estudo Análise e Desenvolvimento de Sistemas com o ensino médio na ETEC Professor Camargo Aranha. Tenho me aprimorado recentemente em cursos de programação, cursos esses que me ajudaram a desenvolver habilidades como Desenvolver aplicações <span>backend</span> utilizando <span>Java</span> e obtendo conhecimento em outras áreas, como o curso de <span>'WEB-Designer - Frontend'</span>. Desenvolvi essas habilidades com o objetivo de aprimorar minhas competências técnicas e me preparar para atuar no mercado de desenvolvimento de software.</p>
+        </article>
 
         <h1 id="projetos" class="titulo">Projetos</h1>
-        <article class="Grade">
+        <article class="grade">
             <section class="projetosGrade">
                 <a href="https://github.com/MuriloRVv2/AgendaContatos" target="_blank">
                     <img src="imgs/Agenda.webp" alt="Agenda">
@@ -43,14 +46,17 @@
         </article>
 
         <h1 id="contato" class="titulo">Contato</h1>
-        <form action="https://formsubmit.co/muriloveroneze0987@gmail.com" method="POST">
+        <form action="https://formsubmit.co/muriloveroneze0987@gmail.com" method="POST" target="_blank">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Seu email">
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+            <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem"></textarea>
+            <section class="botoes">
+                <button type="submit">Enviar</button>
+                <button class="limpar" type="reset">Limpar</button>
+            </section>
         </form>
 
     </main>
