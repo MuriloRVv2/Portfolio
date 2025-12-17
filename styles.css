@@ -389,6 +389,9 @@ footer {
   .Logo img {
     height: 50px;
     padding: 0.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   header {
@@ -415,7 +418,8 @@ footer {
   .botaoTema img {
     width: 40px;
     margin: 1rem;
-    position: static; /* Ajusta para não ficar fixo */
+    position: fixed;
+    right: 1%;
     display: block;
     margin: 1rem auto;
   }
