@@ -246,6 +246,11 @@ input, textarea {
   color: var(--cor-font);
 }
 
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
 input::placeholder, textarea::placeholder {
   color: var(--cor-font);
   opacity: 0.7;
