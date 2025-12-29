@@ -118,6 +118,7 @@ button:hover {
 .intro span {
   color: var(--cor-sombra1);
   font-style: italic;
+  filter: brightness(250%);
 }
 
 /* Background com noise colorido */
