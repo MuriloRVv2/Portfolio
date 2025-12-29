@@ -371,6 +371,10 @@ footer {
     font-size: 1.4rem;
   }
 
+  textarea {
+    resize: vertical;
+  }
+
   button[type="submit"], .limpar {
     width: 130px;
     font-size: 1.4rem;
