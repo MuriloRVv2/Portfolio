@@ -12,7 +12,7 @@
   --cor-fundo3: rgba(244, 238, 224, 0.5); /*Cor de fundo do "header"*/
   --cor-font: black;
   --cor-font-a: white;
-  --cor-sombra1: rgba(192, 3, 64, 0.6);
+  --cor-sombra1: rgba(192, 3, 64);
 }
 
 :root[data-tema="escuro"] {
@@ -21,7 +21,7 @@
   --cor-fundo3: rgba(57, 54, 70, 0.5);
   --cor-font: white;
   --cor-font-a: black;
-  --cor-sombra1: rgba(192, 3, 64, 0.6);
+  --cor-sombra1: rgba(192, 3, 64);
 }
 
 body {
@@ -158,7 +158,7 @@ button:hover {
 
 .intro figure img {
   width: 300px;
-  border-radius: 50%;
+  border-radius: 20%;
   box-shadow: 0 0 40px var(--cor-sombra1);
 }
 
@@ -183,6 +183,7 @@ button:hover {
 .informacao p span {
   font-weight: 700;
   color: var(--cor-sombra1);
+  filter: brightness(200%);
 }
 
 .grade {
