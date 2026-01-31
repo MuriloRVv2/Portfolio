@@ -6,22 +6,14 @@
   scroll-behavior: smooth;
 }
 
-:root[data-tema="claro"] {
-  --cor-fundo: conic-gradient(at top right, #8d8daa, #dfdede, #f7f5f2);
-  --cor-fundo2: rgb(255, 255, 255); /*Cor de fundo do "intro"*/
-  --cor-fundo3: rgba(255, 255, 255, 0.294); /*Cor de fundo do "header"*/
-  --cor-font: black;
-  --cor-font-a: white;
-  --cor-sombra1: rgb(151, 0, 48);
-}
-
 :root[data-tema="escuro"] {
   --cor-fundo: radial-gradient(ellipse at top, #0f172a, #334155);
   --cor-fundo2: rgb(0, 0, 0);
-  --cor-fundo3: rgba(0, 0, 0, 0.294);
+  --cor-fundo3: rgba(0, 0, 0, 0.202);
   --cor-font: white;
   --cor-font-a: black;
   --cor-sombra1: rgba(192, 3, 64);
+  --cor-sombra12: rgba(255, 177, 177, 0.387);
 }
 
 body {
@@ -54,7 +46,8 @@ header {
   right: 38%;
   background: var(--cor-fundo3);
   border-radius: 3rem;
-  box-shadow: 0px 5px 10px 5px var(--cor-sombra1);
+  border: .5px solid var(--cor-sombra1);
+  box-shadow: inset 0 0 10px .5px var(--cor-sombra12);
   z-index: 2;
   font-family: "Inconsolata";
   font-weight: 800;
@@ -86,21 +79,6 @@ button {
 
 button:hover {
   cursor: pointer;
-}
-
-.botaoTema img {
-  width: 50px;
-  margin: 2rem;
-  position: fixed;
-  right: 1%;
-  top: 1%;
-  transition: transform 0.3s;
-  z-index: 2;
-}
-
-.botaoTema img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
 }
 
 .intro {
@@ -158,9 +136,9 @@ button:hover {
 }
 
 .intro figure img {
-  width: 300px;
+  width: 500px;
   border-radius: 20%;
-  box-shadow: 0 0 40px var(--cor-sombra1);
+  box-shadow: inset 0 0 10px .5px whitesmoke;
 }
 
 .titulo {
@@ -199,7 +177,7 @@ button:hover {
   background: var(--cor-fundo3);
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: 0px 2px 5px 1px var(--cor-sombra1);
+  border: .5px solid var(--cor-sombra1);
   transition: transform 0.3s;
 }
 
@@ -208,7 +186,7 @@ button:hover {
 }
 
 .projetosGrade img {
-  width: 300px;
+  width: 700px;
   border-radius: 1rem;
 }
 
@@ -313,8 +291,9 @@ footer {
   }
 
   header {
-    right: 20%;
+    right: 25%;
     padding: 0.5rem;
+    border-radius: 5rem;
   }
 
   header a {
@@ -323,14 +302,7 @@ footer {
 
   header ul {
     gap: 1.5rem;
-    margin: 0.8rem;
-  }
-
-  .botaoTema img {
-    width: 45px;
-    margin: 1.5rem;
-    position: fixed;
-    z-index: 2;
+    margin: .8rem;
   }
 
   .intro {
@@ -341,10 +313,12 @@ footer {
   .intro h1 {
     font-size: 3rem;
     max-width: 700px;
+    margin: 1rem 0 -15rem 0;
   }
 
   .intro figure img {
-    width: 250px;
+    width: 600px;
+    padding: 2rem;
   }
 
   .titulo {
@@ -358,7 +332,7 @@ footer {
   }
 
   .projetosGrade img {
-    width: 250px;
+    width: 450px;
   }
 
   figcaption {
@@ -402,18 +376,18 @@ footer {
     height: 50px;
     padding: 0.8rem;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 2rem;
+    left: 2rem;
   }
 
   header {
-    position: static; /* Remove fixed para evitar sobreposição em mobile */
+    position: fixed;
     margin: 0;
-    padding: 0.5rem;
+    padding: 1rem;
     flex-direction: column;
-    border-radius: 1rem;
-    right: auto;
-    width: 90%;
+    border-radius: 5rem;
+    right: 11%;
+    width: 70%;
     margin: 1rem auto;
   }
 
@@ -427,24 +401,17 @@ footer {
     font-size: 1.4rem;
   }
 
-  .botaoTema img {
-    width: 40px;
-    margin: 1rem;
-    position: fixed;
-    right: 1%;
-    display: block;
-    margin: 1rem auto;
-  }
-
   .intro {
     flex-direction: column;
     text-align: center;
     min-height: auto;
+    padding-top: 15rem;
   }
 
   .intro h1 {
     font-size: 2.5rem;
     max-width: 100%;
+    margin: 1rem;
   }
 
   .intro figure img {

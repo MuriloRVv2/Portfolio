@@ -1,14 +1,3 @@
-// Função para trocar o tema
-function trocarTema() {
-    const html = document.documentElement;
-    const temaAtual = html.getAttribute('data-tema');
-    
-    // Verifica o tema atual e alterna
-    const novoTema = temaAtual === 'escuro' ? 'claro' : 'escuro';
-    html.setAttribute('data-tema', novoTema);
-    localStorage.setItem('tema', novoTema);
-}
-
 // Carrega o tema salvo ao abrir a página
 function carregarTema() {
     const html = document.documentElement;
