@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 
-:root[data-tema="escuro"] {
+:root {
   --cor-fundo: radial-gradient(ellipse at top, #0f172a, #334155);
   --cor-fundo2: rgb(0, 0, 0);
   --cor-fundo3: rgba(0, 0, 0, 0.202);
@@ -291,6 +291,7 @@ footer {
   }
 
   header {
+    width: 30rem;
     right: 25%;
     padding: 0.5rem;
     border-radius: 5rem;
@@ -318,7 +319,6 @@ footer {
 
   .intro figure img {
     width: 600px;
-    padding: 2rem;
   }
 
   .titulo {
@@ -376,25 +376,25 @@ footer {
     height: 50px;
     padding: 0.8rem;
     position: fixed;
-    top: 2rem;
-    left: 2rem;
+    top: 1px;
+    left: 38%;
   }
 
   header {
     position: fixed;
-    margin: 0;
-    padding: 1rem;
+    padding: .5rem;
     flex-direction: column;
-    border-radius: 5rem;
-    right: 11%;
-    width: 70%;
+    border-radius: 3rem;
+    right: 10%;
+    width: 20rem;
     margin: 1rem auto;
+    height: 7rem;
   }
 
   header ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
-    margin: 0.5rem;
+    margin-top: 3rem;
   }
 
   header a {

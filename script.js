@@ -1,16 +1,3 @@
-// Carrega o tema salvo ao abrir a página
-function carregarTema() {
-    const html = document.documentElement;
-    const temaGuardado = localStorage.getItem('tema');
-    
-    if (temaGuardado) {
-        html.setAttribute('data-tema', temaGuardado);
-    } else {
-        // Define o tema padrão como claro
-        html.setAttribute('data-tema', 'claro');
-    }
-}
-
 // Executa ao carregar a página
 document.addEventListener('DOMContentLoaded', carregarTema);
 
