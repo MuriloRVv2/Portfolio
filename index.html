@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Murilo Rodrigues</title>
-    <link rel="stylesheet" href="styles.css">
+    <link id="theme-style" rel="stylesheet" href="styles.css">
     <link rel="icon" href="imgs/LogoMurilo2.0.png" type="img">
     <script defer src="script.js"></script>
 </head>
+
 <body>
+
+    <!-- From Uiverse.io by Galahhad -->
+    <label class="theme-switch">
+        <input type="checkbox" class="theme-switch__checkbox" id="theme-toggle">
+        <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+            <div class="theme-switch__circle-container">
+                <div class="theme-switch__sun-moon-container">
+                    <div class="theme-switch__moon">
+                        <div class="theme-switch__spot"></div>
+                        <div class="theme-switch__spot"></div>
+                        <div class="theme-switch__spot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </label>
 
     <header>
         <figure class="Logo">
             <a href="#"><img src="imgs/LogoMurilo2.0.webp" alt="Logotipo" id="inicio"></a>
         </figure>
         <ul>
-            <li><a href="#sobre" class="sobre">Sobre</a></li>
-            <li><a href="#projetos" class="projetos">Projetos</a></li>
-            <li><a href="#contato" class="contato">Contato</a></li>
+            <li><a href="#sobre" class="sobreH">Sobre</a></li>
+            <li><a href="#projetos" class="projetosH">Projetos</a></li>
+            <li><a href="#contato" class="contatoH">Contato</a></li>
         </ul>
     </header>
 
@@ -27,82 +53,83 @@
             <figure><img src="imgs/Foto de perfil.webp" alt="perfil"></figure>
         </section>
 
-        <h1 class="titulo" id="sobre">Sobre Mim</h1>
-        <article class="informacao">
-            <p>Meu nome é Murilo Rodrigues, tenho 18 anos e estudo Análise e Desenvolvimento de Sistemas com o ensino médio na ETEC Professor Camargo Aranha. Tenho me aprimorado recentemente em cursos de programação, cursos esses que me ajudaram a desenvolver habilidades como: Desenvolver aplicações <span>backend</span> utilizando <span>Java</span> e obtendo conhecimento em outras áreas, como o curso de <span>'WEB-Designer - Frontend'</span>. Desenvolvi essas habilidades com o objetivo de aprimorar minhas competências técnicas e me preparar para atuar no mercado de desenvolvimento de software.</p>
+        <section class="sobre">
+            <h1 class="titulo" id="sobre">Sobre Mim</h1>
+            <article class="informacao">
+                <p>Meu nome é Murilo Rodrigues, tenho 18 anos e estudo Análise e Desenvolvimento de Sistemas com o
+                    ensino médio na ETEC Professor Camargo Aranha. Tenho me aprimorado recentemente em cursos de
+                    programação, cursos esses que me ajudaram a desenvolver habilidades como: Desenvolver aplicações
+                    <span>backend</span> utilizando <span>Java</span> e obtendo conhecimento em outras áreas, como o
+                    curso de <span>'WEB-Designer - Frontend'</span>. Desenvolvi essas habilidades com o objetivo de
+                    aprimorar minhas competências técnicas e me preparar para atuar no mercado de desenvolvimento de
+                    software.</p>
+                <figure><img src="imgs/ETEC.webp" alt="ETEC" class="etec">Etec Professor Camargo Aranha</figure>
+            </article>
+        </section>
 
-            <figure><img src="imgs/ETEC.webp" alt="ETEC" class="etec">Etec Professor Camargo Aranha</figure>
+        <section class="projetos">
+            <h1 id="projetos" class="titulo">Projetos</h1>
+            <article class="grade">
+                <section class="projetosGrade">
+                    <a href="https://github.com/MuriloRVv2/AgendaContatos" target="_blank" class="agendaP">
+                        <img src="imgs/Agenda.webp" alt="Agenda">
+                        <figcaption>Agenda de Contatos</figcaption>
+                    </a>
+                    <div class="gameOnP">
+                        <img src="imgs/GameOn.png" alt="GameOn">
+                        <figcaption>Game On Tech - Hackathon certificado de finalista.</figcaption>
+                    </div>
+                </section>
+            </article>
+        </section>
 
-        </article>
-
-        <h1 id="projetos" class="titulo">Projetos</h1>
-        <article class="grade">
-            <section class="projetosGrade">
-                <a href="https://github.com/MuriloRVv2/AgendaContatos" target="_blank" class="agendaP">
-                    <img src="imgs/Agenda.webp" alt="Agenda">
-                    <figcaption>Agenda de Contatos</figcaption>
-                </a>
-                <div class="gameOnP">
-                    <img src="imgs/GameOn.png" alt="GameOn">
-                    <figcaption>Game On Tech - Hackathon certificado de finalista.</figcaption>
-                </div>
-            </section>
-        </article>
-
-        <h1 id="contato" class="titulo">Contato</h1>
-        <form action="https://formsubmit.co/muriloveroneze0987@gmail.com" method="POST" target="_blank">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Seu email">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem"></textarea>
-            <section class="botoes">
-                <button class="box-button" type="submit"><span class="button">Enviar</span></button>
-                <button class="box-button" type="reset"><span class="button">Limpar</span></button>
-            </section>
-        </form>
+        <section class="contato">
+            <h1 id="contato" class="titulo">Contato</h1>
+            <form action="https://formsubmit.co/muriloveroneze0987@gmail.com" method="POST" target="_blank">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu email">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem"></textarea>
+                <section class="botoes">
+                    <button class="box-button" type="submit"><span class="button">Enviar</span></button>
+                    <button class="box-button" type="reset"><span class="button">Limpar</span></button>
+                </section>
+            </form>
+        </section>
 
     </main>
     <footer>
-    <p>© 2026 Murilo Rodrigues.</p>
+        <p>© 2026 Murilo Rodrigues.</p>
 
-    <div class="redes">
-        <ul class="wrapper">
-            
-            <!-- WhatsApp -->
-            <li class="icon whatsapp">
-                <a href="https://api.whatsapp.com/send/?phone=5511961440243&text&type=phone_number&app_absent=0"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="WhatsApp">
-                   
-                    <span class="tooltip">WhatsApp</span>
+        <div class="redes">
+            <ul class="wrapper">
 
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         height="1.2em"
-                         fill="currentColor"
-                         viewBox="0 0 16 16">
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                    </svg>
+                <!-- WhatsApp -->
+                <li class="icon whatsapp">
+                    <a href="https://api.whatsapp.com/send/?phone=5511961440243&text&type=phone_number&app_absent=0"
+                        target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
 
-                </a>
-            </li>
+                        <span class="tooltip">WhatsApp</span>
 
-            <!-- GitHub -->
-            <li class="icon github">
-                <a href="https://github.com/MuriloRVv2"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="GitHub">
-                   
-                    <span class="tooltip">GitHub</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         height="1.4em"
-                         fill="currentColor"
-                         viewBox="0 0 24 24">
-                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
+                    </a>
+                </li>
+
+                <!-- GitHub -->
+                <li class="icon github">
+                    <a href="https://github.com/MuriloRVv2" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+
+                        <span class="tooltip">GitHub</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.4em" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
                 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757
                 -1.087-.744.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236
                     1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.304.76-1.603
@@ -113,34 +140,46 @@
                     .77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.48 5.92
                     .43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293
                     0 .322.218.694.825.576C20.565 21.796 24 17.297 24 12
-                    24 5.37 18.63 0 12 0z"/>
-                    </svg>
+                    24 5.37 18.63 0 12 0z" />
+                        </svg>
 
-                </a>
-            </li>
+                    </a>
+                </li>
 
-            <!-- Instagram -->
-            <li class="icon instagram">
-                <a href="https://www.instagram.com/mrvv_o7/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Instagram">
-                   
-                    <span class="tooltip">Instagram</span>
+                <!-- Instagram -->
+                <li class="icon instagram">
+                    <a href="https://www.instagram.com/mrvv_o7/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
 
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         height="1.2em"
-                         fill="currentColor"
-                         viewBox="0 0 16 16">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                    </svg>
+                        <span class="tooltip">Instagram</span>
 
-                </a>
-            </li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
 
-        </ul>
-    </div>
-</footer>
+                    </a>
+                </li>
+                <!-- Linkedin -->
+                <li class="icon linkedin">
+                    <a href="https://www.linkedin.com/in/murilo-rodrigues-viegas-883628311" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+
+                        <span class="tooltip">LinkedIn</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
 
 </body>
+
 </html>

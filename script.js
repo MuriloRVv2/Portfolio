@@ -1,3 +1,36 @@
+// Função para carregar o tema ao abrir a página
+function carregarTema() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const temaSalvo = localStorage.getItem('tema') || 'claro';
+    
+    if (temaSalvo === 'escuro') {
+        themeToggle.checked = true;
+        mudarTema(true);
+    } else {
+        themeToggle.checked = false;
+        mudarTema(false);
+    }
+    
+    themeToggle.addEventListener('change', (e) => {
+        mudarTema(e.target.checked);
+    });
+}
+
+// Função para mudar o tema
+function mudarTema(ativo) {
+    const temaLink = document.getElementById('theme-style');
+    
+    if (ativo) {
+        // Tema escuro ativo
+        temaLink.href = 'styleDark.css';
+        localStorage.setItem('tema', 'escuro');
+    } else {
+        // Tema claro ativo
+        temaLink.href = 'styles.css';
+        localStorage.setItem('tema', 'claro');
+    }
+}
+
 // Executa ao carregar a página
 document.addEventListener('DOMContentLoaded', carregarTema);
 
@@ -68,3 +101,4 @@ const formSubmit = new FormSubmit({
 })
 
 formSubmit.init();
+
