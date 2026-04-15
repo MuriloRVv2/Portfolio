@@ -552,7 +552,7 @@ function About() {
                 position: "relative",
               }}>
                 {/* ETEC building visual representation */}
-                <div style={{ textAlign: "center", color: "var(--accent)", padding: "1rem", marginright: "0.75rem" }}>
+                <div style={{ textAlign: "center", color: "var(--accent)", padding: "1rem", marginRight: "0.75rem" }}>
                   <div style={{ fontSize: "3rem" }}>🏫</div>
                   <div style={{ fontWeight: 700, fontSize: "0.9rem", marginTop: "0.5rem", color: "var(--text)" }}>
                     ETEC Camargo Aranha
