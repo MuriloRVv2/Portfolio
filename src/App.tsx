@@ -133,7 +133,8 @@ const ProfileAvatar = () => (
         borderRadius: "50%",
         border: "4px solid var(--accent)",
         boxShadow: "0 0 0 8px var(--tag-bg), 0 20px 60px rgba(0,0,0,0.25)",
-        background: "linear-gradient(135deg, var(--secondary), var(--primary))",
+        background: "url('imgs/Foto de Perfil.webp')",
+        backgroundSize: "cover",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -144,13 +145,13 @@ const ProfileAvatar = () => (
         zIndex: 1,
       }}
     >
-      {/* Hexagon logo style */}
+    {/* { Hexagon logo style }
       <svg width="180" height="180" viewBox="0 0 100 100" fill="none">
-        <polygon points="50,8 88,29 88,71 50,92 12,71 12,29" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.3"/>
+        <polygon points="50,8 88,29 88,71 50,92 12,71 12, 29" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.3"/>
         <polygon points="50,18 78,33 78,67 50,82 22,67 22,33" fill="var(--accent)" opacity="0.1"/>
         <text x="50" y="60" textAnchor="middle" fontSize="30" fontWeight="800" fontFamily="Plus Jakarta Sans,sans-serif" fill="var(--accent)">MR</text>
         <text x="50" y="75" textAnchor="middle" fontSize="8" fontFamily="Plus Jakarta Sans,sans-serif" fill="var(--text-muted)">DEV</text>
-      </svg>
+      </svg>*/} 
     </div>
     <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
   </div>
@@ -543,8 +544,8 @@ function About() {
           }}>
             <div className="card" style={{ padding: "1rem", textAlign: "center", maxWidth: 280 }}>
               <div style={{
-                width: 260, height: 180,
-                background: "linear-gradient(135deg, var(--secondary), var(--primary))",
+                width: 250, height: 180,
+                background: "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('imgs/ETEC.webp') center/cover no-repeat",
                 borderRadius: "0.75rem",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 marginBottom: "0.75rem",
@@ -552,17 +553,16 @@ function About() {
                 position: "relative",
               }}>
                 {/* ETEC building visual representation */}
-                <div style={{ textAlign: "center", color: "var(--accent)", padding: "1rem", marginRight: "0.75rem" }}>
-                  <div style={{ fontSize: "3rem" }}>🏫</div>
-                  <div style={{ fontWeight: 700, fontSize: "0.9rem", marginTop: "0.5rem", color: "var(--text)" }}>
+                <div style={{ textAlign: "center", color: "#fff", padding: "1rem", marginRight: "0.75rem" }}>
+                  <div style={{ fontWeight: 700, fontSize: "0.9rem", marginTop: "0.5rem", color: "#fff" }}>
                     ETEC Camargo Aranha
                   </div>
                 </div>
               </div>
-              <p style={{ color: "var(--accent)", fontWeight: 700, fontSize: "0.9rem" }}>
+              <p style={{ color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>
                 Análise e Desenvolvimento de Sistemas
               </p>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.8rem", marginTop: "0.3rem" }}>
+              <p style={{ color: "#e5e9f0", fontSize: "0.8rem", marginTop: "0.3rem" }}>
                 São Paulo, SP · 2024 – presente
               </p>
             </div>
@@ -1021,9 +1021,6 @@ function Footer() {
 
       <p style={{ color: "#8b949e", fontSize: "0.85rem" }}>
         © 2026 <strong style={{ color: "var(--accent)" }}>Murilo Rodrigues</strong>. Todos os direitos reservados.
-      </p>
-      <p style={{ color: "#444d56", fontSize: "0.75rem", marginTop: "0.5rem" }}>
-        Feito com ❤️ usando React + TypeScript + Tailwind CSS
       </p>
     </footer>
   );
