@@ -548,6 +548,7 @@ function About() {
                 borderRadius: "0.75rem",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 marginBottom: "0.75rem",
+                marginRight: "0.75rem",
                 overflow: "hidden",
                 position: "relative",
               }}>
