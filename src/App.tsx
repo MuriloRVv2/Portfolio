@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 
+const profileImageUrl = new URL("../imgs/Foto de Perfil.webp", import.meta.url).href;
+const etecImageUrl = new URL("../imgs/ETEC.webp", import.meta.url).href;
+
 /* ─────────────────────────────────────────────
    ICONS (inline SVG helpers)
 ───────────────────────────────────────────── */
@@ -133,7 +136,7 @@ const ProfileAvatar = () => (
         borderRadius: "50%",
         border: "4px solid var(--accent)",
         boxShadow: "0 0 0 8px var(--tag-bg), 0 20px 60px rgba(0,0,0,0.25)",
-        background: "url('imgs/Foto de Perfil.webp')",
+        background: `url(${profileImageUrl})`,
         backgroundSize: "cover",
         display: "flex",
         alignItems: "center",
@@ -545,7 +548,7 @@ function About() {
             <div className="card" style={{ padding: "1rem", textAlign: "center", maxWidth: 280 }}>
               <div style={{
                 width: 250, height: 180,
-                background: "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('imgs/ETEC.webp') center/cover no-repeat",
+                background: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(${etecImageUrl}) center/cover no-repeat`,
                 borderRadius: "0.75rem",
                 display: "flex", alignItems: "center", justifyContent: "center",
                 marginBottom: "0.75rem",
