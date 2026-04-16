@@ -136,8 +136,7 @@ const ProfileAvatar = () => (
         borderRadius: "50%",
         border: "4px solid var(--accent)",
         boxShadow: "0 0 0 8px var(--tag-bg), 0 20px 60px rgba(0,0,0,0.25)",
-        background: `url(${profileImageUrl})`,
-        backgroundSize: "cover",
+        background: `linear-gradient(135deg, var(--primary), var(--bg2))`,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -148,13 +147,13 @@ const ProfileAvatar = () => (
         zIndex: 1,
       }}
     >
-    {/* { Hexagon logo style }
+    { /* Hexagon logo style */ }
       <svg width="180" height="180" viewBox="0 0 100 100" fill="none">
         <polygon points="50,8 88,29 88,71 50,92 12,71 12, 29" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.3"/>
         <polygon points="50,18 78,33 78,67 50,82 22,67 22,33" fill="var(--accent)" opacity="0.1"/>
         <text x="50" y="60" textAnchor="middle" fontSize="30" fontWeight="800" fontFamily="Plus Jakarta Sans,sans-serif" fill="var(--accent)">MR</text>
         <text x="50" y="75" textAnchor="middle" fontSize="8" fontFamily="Plus Jakarta Sans,sans-serif" fill="var(--text-muted)">DEV</text>
-      </svg>*/} 
+      </svg> 
     </div>
     <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
   </div>
