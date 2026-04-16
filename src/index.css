@@ -11,28 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ── Theme variables ── */
 :root {
-  --bg: #f2f2f3;
-  --bg2: #e8e8ea;
-  --text: #000102;
-  --text-muted: #4a5568;
-  --primary: #040d12;
-  --secondary: #183d3d;
-  --accent: #5c8374;
-  --accent-light: #7fa896;
-  --highlight: #0b4242;
-  --card-bg: #ffffff;
-  --border: #183d3d;
-  --grid-line: rgba(4,13,18,0.08);
-  --nav-bg: rgba(242,242,243,0.85);
-  --input-bg: #ffffff;
-  --input-border: #5c8374;
-  --tag-bg: #e0eeea;
-  --tag-text: #183d3d;
-}
-
-[data-theme="dark"] {
   --bg: #0d1117;
   --bg2: #161b22;
   --text: #e6edf3;

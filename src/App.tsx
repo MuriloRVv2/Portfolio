@@ -225,29 +225,7 @@ function Navbar({ dark, toggleDark }: { dark: boolean; toggleDark: () => void })
             <a key={l.href} href={l.href} className="nav-link" onClick={(e) => { e.preventDefault(); handleNav(l.href); }}>
               {l.label}
             </a>
-          ))}
-          {/* Theme toggle */}
-          <button
-            onClick={toggleDark}
-            aria-label="Alternar tema"
-            style={{
-              background: "var(--secondary)",
-              border: "2px solid var(--border)",
-              borderRadius: "9999px",
-              padding: "0.4rem 0.9rem",
-              display: "flex",
-              alignItems: "center",
-              gap: "0.4rem",
-              cursor: "pointer",
-              color: "var(--text)",
-              fontWeight: 600,
-              fontSize: "0.85rem",
-              transition: "all 0.3s ease",
-            }}
-          >
-            {dark ? <IconSun /> : <IconMoon />}
-            {dark ? "Claro" : "Escuro"}
-          </button>
+          ))} 
         </div>
 
         {/* Mobile hamburger */}
@@ -265,20 +243,6 @@ function Navbar({ dark, toggleDark }: { dark: boolean; toggleDark: () => void })
             className="mobile-theme-btn"
           >
             {dark ? <IconSun /> : <IconMoon />}
-          </button>
-          <button
-            onClick={() => setOpen(!open)}
-            aria-label="Menu"
-            style={{
-              background: "none",
-              border: "none",
-              color: "var(--text)",
-              cursor: "pointer",
-              display: "none",
-            }}
-            className="hamburger-btn"
-          >
-            {open ? <IconX /> : <IconMenu />}
           </button>
         </div>
       </div>
@@ -597,7 +561,7 @@ function Skills() {
     {
       title: "Backend",
       emoji: "⚙️",
-      skills: ["Java", "Spring Boot", "REST APIs", "MySQL", "Git"],
+      skills: ["Java", "Spring Boot", "REST APIs", "MySQL", "Git", "Github"],
     },
     {
       title: "Frontend",
@@ -607,7 +571,7 @@ function Skills() {
     {
       title: "Ferramentas",
       emoji: "🛠️",
-      skills: ["Git & GitHub", "VS Code", "IntelliJ IDEA", "Figma", "Linux"],
+      skills: ["Git & GitHub", "VS Code", "IntelliJ IDEA", "Figma"],
     },
   ];
 
@@ -668,7 +632,7 @@ function Projects() {
       title: "Agenda de Contatos",
       description:
         "Aplicação desktop em Java para gerenciamento de contatos. Permite cadastrar, visualizar, atualizar e excluir contatos de forma simples e eficiente.",
-      tags: ["Java", "Swing", "MySQL"],
+      tags: ["Java", "MySQL", "Spring Boot"],
       emoji: "📒",
       gradient: "linear-gradient(135deg, #183d3d, #0b4242)",
       link: "https://github.com/MuriloRVv2/AgendaContatos",
