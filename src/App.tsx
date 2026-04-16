@@ -135,8 +135,8 @@ const ProfileAvatar = () => (
         height: 260,
         borderRadius: "50%",
         border: "4px solid var(--accent)",
-        boxShadow: "0 0 0 8px var(--tag-bg), 0 20px 60px rgba(0,0,0,0.25)",
-        background: `linear-gradient(135deg, var(--primary), var(--bg2))`,
+        boxShadow: "0 0 0 12px rgba(92,131,116,0.12), 0 25px 80px rgba(0,0,0,0.18)",
+        background: `linear-gradient(135deg, var(--accent), var(--primary) 65%)`,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -147,10 +147,15 @@ const ProfileAvatar = () => (
         zIndex: 1,
       }}
     >
+      <div style={{
+        position: "absolute", inset: 0,
+        background: "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.28), transparent 55%)",
+        pointerEvents: "none",
+      }} />
     { /* Hexagon logo style */ }
       <svg width="180" height="180" viewBox="0 0 100 100" fill="none">
-        <polygon points="50,8 88,29 88,71 50,92 12,71 12, 29" fill="none" stroke="var(--accent)" strokeWidth="2" opacity="0.3"/>
-        <polygon points="50,18 78,33 78,67 50,82 22,67 22,33" fill="var(--accent)" opacity="0.1"/>
+        <polygon points="50,8 88,29 88,71 50,92 12,71 12, 29" fill="none" stroke="var(--accent)" strokeWidth="3" opacity="0.55"/>
+        <polygon points="50,18 78,33 78,67 50,82 22,67 22,33" fill="var(--accent)" opacity="0.2"/>
         <text x="50" y="60" textAnchor="middle" fontSize="30" fontWeight="800" fontFamily="Plus Jakarta Sans,sans-serif" fill="var(--accent)">MR</text>
         <text x="50" y="75" textAnchor="middle" fontSize="8" fontFamily="Plus Jakarta Sans,sans-serif" fill="var(--text-muted)">DEV</text>
       </svg> 
@@ -210,7 +215,7 @@ function Navbar({ dark, toggleDark }: { dark: boolean; toggleDark: () => void })
         >
           <LogoMR />
           <span style={{ fontWeight: 800, fontSize: "1.1rem", color: "var(--text)" }}>
-            Murilo<span style={{ color: "var(--accent)" }}>.</span>
+            Murilo Rodrigues<span style={{ color: "var(--accent)" }}>.</span>
           </span>
         </a>
 
