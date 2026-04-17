@@ -651,13 +651,34 @@ function Projects() {
     {
       title: "Portfolio Pessoal",
       description:
-        "Este portfolio! Desenvolvido com React, Vite e Tailwind CSS, com suporte a tema claro/escuro, animações de scroll e design responsivo.",
+        "Este portfolio! Desenvolvido com React, Vite e Tailwind CSS, animações de scroll e design responsivo.",
       tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       emoji: "🌐",
       gradient: "linear-gradient(135deg, #0b4242, #183d3d)",
       link: "https://github.com/MuriloRVv2",
       linkLabel: "GitHub",
     },
+    {
+      title: "Projeto de Gerador de CSS com IA",
+      description:
+        "Projeto de curso online de Devclub para criar um gerador de código CSS usando inteligência artificial. O objetivo é permitir que os usuários descrevam o estilo desejado em linguagem natural e recebam o código CSS correspondente.",
+      tags: ["HTML5, CSS3", "JavaScript", "IA"],
+      emoji: "🎨",
+      gradient: "linear-gradient(135deg, #1a1a2e, #16213e)",
+      link: "https://github.com/MuriloRVv2/DevClub-aula",
+      linkLabel: "GitHub",
+    },
+    {
+      title: "Projeto de Barbearia Online",
+      description:
+        "Projeto pessoal de criar um site de barbearia. O objetivo é desenvolver um site responsivo e moderno para uma barbearia fictícia, utilizando as melhores práticas de desenvolvimento web.",
+      tags: ["Java", "Spring Boot", "React", "PostgreSQL"],
+      emoji: "💈",
+      gradient: "linear-gradient(135deg, #0b4242, #183d3d)",
+      link: "https://github.com/MuriloRVv2/BarberList",
+      linkLabel: "GitHub",
+    }
+
   ];
 
   return (
