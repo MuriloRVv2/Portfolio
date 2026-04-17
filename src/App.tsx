@@ -677,6 +677,16 @@ function Projects() {
       gradient: "linear-gradient(135deg, #0b4242, #183d3d)",
       link: "https://github.com/MuriloRVv2/BarberList",
       linkLabel: "GitHub",
+    },
+    {
+      title: "Ver mais projetos no meu GitHub",
+      description:
+        "Tenho diversos outros projetos menores e contribuições em andamento. Sinta-se à vontade para explorar meu perfil no GitHub e conferir o que mais estou desenvolvendo!",
+      tags: ["GitHub"],
+      emoji: "🌐",
+      gradient: "linear-gradient(135deg, #1a1a2e, #16213e)",
+      link: "https://github.com/MuriloRVv2",
+      linkLabel: "GitHub",
     }
 
   ];
