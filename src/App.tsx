@@ -662,7 +662,7 @@ function Projects() {
       title: "Projeto de Gerador de CSS com IA",
       description:
         "Projeto de curso online de Devclub para criar um gerador de código CSS usando inteligência artificial. O objetivo é permitir que os usuários descrevam o estilo desejado em linguagem natural e recebam o código CSS correspondente.",
-      tags: ["HTML5, CSS3", "JavaScript", "IA"],
+      tags: ["HTML5", "CSS3", "JavaScript", "IA"],
       emoji: "🎨",
       gradient: "linear-gradient(135deg, #1a1a2e, #16213e)",
       link: "https://github.com/MuriloRVv2/DevClub-aula",
